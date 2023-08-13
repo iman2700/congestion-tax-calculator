@@ -73,38 +73,6 @@ public class CongestionTaxCalculator
         }
     }
 
-     
-
-        //foreach (DateTime date in dates)
-        //{
-        //    int nextFee = GetTollFee(date, vehicle);
-        //    int tempFee = GetTollFee(intervalStart, vehicle);
-
-        //    long diffInMillies = date.Millisecond - intervalStart.Millisecond;
-        //    long minutes = diffInMillies / 1000 / 60;
-
-        //    if (minutes <= MaxDailyFee)
-        //    {
-        //        if (totalFee > 0)
-        //        {
-        //            totalFee -= tempFee;
-        //        }
-        //        if (nextFee >= tempFee)
-        //        {
-        //            tempFee = nextFee;
-        //        }
-
-        //        totalFee += tempFee;
-        //    }
-        //    else
-        //    {
-        //        totalFee += nextFee;
-        //    }
-        //}
-        //if (totalFee > MaxDailyFee) totalFee = MaxDailyFee;
-        //return totalFee;
-    
-
     private bool IsTollFreeVehicle(Vehicle vehicle)
     {
         // Validate input
